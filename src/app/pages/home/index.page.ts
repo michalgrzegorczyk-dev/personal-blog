@@ -35,7 +35,7 @@ import MindsetComponent from "../mindset/index.page";
   `,
 })
 export default class HomeComponent {
-  headerTitle = signal("these are my notes rather than a professional blog, so please treat them with delicacy 🌱😌");
+  headerTitle = signal("these are my notes rather than a professional blog, so please treat them with delicacy 🌱😌 (at least at early stage)");
 
   aboutMeParagraphs = signal([
     "Hi! I'm Michal, a software engineer with over 8 years of experience. Throughout my career, I've mostly worked with Java and Angular, building new applications from scratch and working on big legacy systems as well. Lately, I've been focusing mostly on front-end development, mainly using Angular.",
