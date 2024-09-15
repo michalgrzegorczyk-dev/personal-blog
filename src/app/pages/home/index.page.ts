@@ -46,8 +46,8 @@ export default class HomeComponent {
 
   socialMedia = signal([
     {name: "linkedin", url: "https://www.linkedin.com/in/michalgrzegorczyk-dev/"},
-    {name: "youtube", url: "https://www.youtube.com"},
-    {name: "twitter", url: "https://x.com/michalgrzeg_dev"},
-    {name: "github", url: "https://github.com/michalgrzegorczyk-dev"},
+    // {name: "youtube", url: "https://www.youtube.com"},
+    // {name: "twitter", url: "https://x.com/michalgrzeg_dev"},
+    {name: "github", url: "https://github.com/michalgrzegorczyk-dev/personal-blog/"},
   ]);
 };
