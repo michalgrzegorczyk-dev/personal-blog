@@ -1,0 +1,65 @@
+import {Component, ChangeDetectionStrategy} from '@angular/core';
+import {RouterLink} from '@angular/router';
+import {NgForOf} from "@angular/common";
+
+interface ResourceLink {
+  url: string;
+  title: string;
+}
+
+interface ResourceCategory {
+  name: string;
+  links: ResourceLink[];
+}
+
+@Component({
+  selector: 'app-productivity',
+  standalone: true,
+  imports: [RouterLink, NgForOf],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `
+    <h2 class="mb-4">resources</h2>
+
+    <ng-container *ngFor="let category of resourceCategories">
+      <h3 class="mb-4">{{ category.name }}</h3>
+      <ul>
+        @for(link of category.links; track link.url) {
+          <li class="mb-7 last-of-type:mb-8">
+            <a [href]="link.url" class="underline">{{ link.url }}</a>
+            <p class="text-sm">{{ link.title }}</p>
+          </li>
+        }
+      </ul>
+    </ng-container>
+  `,
+})
+export default class ResourcesComponent {
+  resourceCategories: ResourceCategory[] = [
+    {
+      name: 'angular',
+      links: [
+        {
+          title: "It's a blog by an experienced guy who focuses on Angular. He shares his programming notes, mostly about Angular, and works at a company I want to join. It’s probably a good idea to stay up to date with his content in case we cross paths in an interview again.",
+          url: 'https://davembush.github.io/'
+        },
+        {
+          title: "A website full of passionate people who love Angular and everything related to it.",
+          url: 'https://www.angular.love/'
+        },
+        {
+          title: "Angualr Sapce is created by Daniel Glejzner. The Hub for Learning and Growing as an Angular Developer.",
+          url: 'https://www.angularspace.com/'
+        },
+      ]
+    },
+    {
+      name: 'front end',
+      links: [
+        {
+          title: 'A quality website focused on advanced frontend techniques, scalable architectures, and solutions.',
+          url: 'https://frontendatscale.com/',
+        },
+      ]
+    },
+  ];
+};

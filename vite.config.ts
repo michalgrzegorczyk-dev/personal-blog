@@ -17,7 +17,7 @@ export default defineConfig(({ mode }) => ({
         highlighter: 'prismjs',
       },
       prerender: {
-        routes: ['/blog', '/blog/2022-12-27-my-first-post'],
+        routes: ['/blog'],
       },
     }),
   ],
