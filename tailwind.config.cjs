@@ -27,7 +27,19 @@ module.exports = {
         '9xl': '6rem',
       },
       colors: {
-        primary: colors.pink,
+        primary: {
+          '50':  '#f3f1fe',
+          '100': '#e4e1fd',
+          '200': '#c8c3fb',
+          '300': '#ada5f9',
+          '400': '#9087f6',
+          '500': '#7b68ee',
+          '600': '#6c5bd4',
+          '700': '#5a4eb8',
+          '800': '#493e99',
+          '900': '#372f75',
+          '950': '#211a46'
+        },
         gray: colors.gray,
       },
     },
@@ -59,8 +71,8 @@ module.exports = {
         fontWeight: '600',
       },
       'p': {
-        fontSize: theme('fontSize.base'),
-        color: theme('colors.gray.600'),
+        fontSize: theme('fontSize.lg'),
+        color: theme('colors.gray.800'),
       },
       'code': {
         color: theme('colors.indigo.500'),

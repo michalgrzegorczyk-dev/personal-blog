@@ -17,7 +17,7 @@ import MindsetComponent from "../mindset/index.page";
 
     <div class="flex space-x-4 mt-5">
       @for (social of socialMedia; track social.name) {
-        <a class="underline" [href]="social.url" target="_blank" [attr.aria-label]="social.name">{{ social.name }}</a>
+        <a class="font-semibold underline" [href]="social.url" target="_blank" [attr.aria-label]="social.name">{{ social.name }}</a>
       }
     </div>
 

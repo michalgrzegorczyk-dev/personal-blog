@@ -10,11 +10,11 @@ import {NgClass, NgIf, DOCUMENT} from "@angular/common";
       <div class="mt-14 sm:mt-16 flex flex-col items-center">
         <div class="mb-4 flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
           <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-2 text-xs text-gray-600">
-            <a href="http://localhost:5173/" class="mx-0">michalgrzegorczyk.dev</a>
+            <a href="http://localhost:5173/" class="font-semibold mx-0 underline">michalgrzegorczyk.dev</a>
             <div class="hidden sm:block"> •</div>
             <div>© copyright {{ currentYear() }}</div>
             <div class="hidden sm:block"> •</div>
-            <a href="https://github.com/michalgrzegorczyk-dev/website" target="_blank" class="mx-0">source code</a>
+            <a href="https://github.com/michalgrzegorczyk-dev/website" target="_blank" class="underline font-semibold mx-0">source code</a>
           </div>
         </div>
       </div>
@@ -59,10 +59,10 @@ class FooterComponent {
 
             <!-- Navigation Links for Desktop -->
             <div class="hidden lg:flex flex-row space-x-0 ml-auto text-gray-900 hover:text-primary-500">
-              <a href="/blog" class="text-sm underline pr-10">blog</a>
-              <a href="/mindset" class=" text-sm underline pr-10">mindset</a>
-              <a href="/productivity" class="text-sm  underline pr-10">productivity</a>
-              <a href="/resources" class=" text-sm  underline">resources</a>
+              <a href="/blog" class="font-semibold text-sm underline pr-10">blog</a>
+              <a href="/mindset" class="font-semibold text-sm underline pr-10">mindset</a>
+              <a href="/productivity" class="font-semibold text-sm  underline pr-10">productivity</a>
+              <a href="/resources" class="font-semibold text-sm underline">resources</a>
             </div>
           </nav>
 
