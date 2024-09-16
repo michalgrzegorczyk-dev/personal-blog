@@ -1,6 +1,6 @@
 ---
-title: messenger, front-en3d system design 💬
-slug: 2022-12-27-my-fir3st-post
+title: This is an example blog post written in markdown!
+slug: 2022-12-27-test-post
 description: A messenge4r is a digital communication tool for real-time messaging, designed with front-end principles using HTML, CSS, and JavaScript. It includes features like media sharing, group chats, and encryption for secure and user-friendly communication.
 coverImage: https://image4s.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80
 ---
