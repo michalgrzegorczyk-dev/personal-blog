@@ -6,7 +6,7 @@ module.exports = {
   content: [
     './index.html',
     './src/**/*.{html,ts,md}',
-    'app/src/app/pages/home/**/*.{html,ts,md}', // Adding the path to your page,
+    'app/src/app/pages/home/**/*.{html,ts,md}',
     '*'
   ],
   theme: {
