@@ -21,15 +21,15 @@ import MindsetComponent from "../mindset/index.page";
       }
     </div>
 
-    <div class="mb-10 mt-12 h-px bg-gray-200"></div>
+    <div class="mb-10 mt-12 h-px bg-gray-400"></div>
 
     <app-blog [postLimit]="2"></app-blog>
 
-    <div class="mb-10 mt-12 h-px bg-gray-200"></div>
+    <div class="mb-10 mt-12 h-px bg-gray-400"></div>
 
     <app-mindset></app-mindset>
 
-    <div class="mb-10 mt-12 h-px bg-gray-200"></div>
+    <div class="mb-10 mt-12 h-px bg-gray-400"></div>
 
     <app-productivity></app-productivity>
   `,
@@ -45,9 +45,16 @@ export default class HomeComponent {
   //     "Here, I'd like to share my thoughts, show some code, post some memes or quotes, and talk about productivity, which is sometimes a challenge for me these days."];
 
   aboutMeParagraphs = [
-    "Hi! I'm Michal, a Software Engineer with 8+ years of experience. I've mainly worked with Java and Angular, building apps from scratch, while on the other hand, maintaining big legacy systems. Recently, I've been focusing more on front-end development with Angular and its ecosystem.",
-    "In my free time, I freelance, leading projects, adding features, collaborating with other developers, designers, and social media experts, while also exploring how products make money, which is pushing me towards product management. I enjoy building team spirit and maintaining transparency and focus on delivery.",
-    "Here, I'll share my thoughts, code, memes, and talk about productivity, which I sometimes struggle with."
+    `Hi! I'm Michal, a Software Engineer with 6+ years of experience. I've mainly worked with Java and Angular/React, building web
+    apps from scratch, improving and expanding existing applications, while also maintaining large legacy systems.
+    Lately, I've been focusing more on front-end work, especially with Angular, while also keeping an interest in Node.js.`,
+
+    "In my free time, I freelance a lot, looking for side jobs, leading projects, adding features, collaborating with other developers, designers, and social media " +
+    "experts, while also exploring " +
+    "how products make money, which is pushing me towards product management. I mainly focus on delivery, but building team spirit and keeping things open and clear are very important to me as well.",
+
+    `Here, on this website, I'll share my thoughts, code, memes, and talk about productivity. I hope you'll find something useful here, and if you have
+    any questions or suggestions, feel free to reach out to me on social media or Discord.`
   ];
   socialMedia = [
     {name: "linkedin", url: "https://www.linkedin.com/in/michalgrzegorczyk-dev/"},

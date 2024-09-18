@@ -11,9 +11,9 @@ import { RouterLink } from '@angular/router';
     <h2 class="mb-4">blog posts</h2>
 
     @for (post of postsToDisplay(); track post.attributes.slug) {
-      <a [routerLink]="['/blog/', post.attributes.slug]" class="block mb-6 p-5 shadow-lg rounded-lg border border-gray-100">
+      <a [routerLink]="['/blog/', post.attributes.slug]" class="block mb-6 p-5 shadow-lg rounded-lg border border-gray-400">
         <h3>{{ post.attributes.title }}</h3>
-        <p class="text-primary-500 text-xs mb-4" style="color: #FD71AF">last updated 27 days ago</p>
+        <p class="text-gray-500 text-xs mb-4">last updated 27 days ago</p>
         <p>{{ post.attributes.description }}</p>
 
         <p class="font-semibold text-primary-500 mt-4 underline">read more</p>

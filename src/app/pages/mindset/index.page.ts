@@ -16,17 +16,16 @@ import {mindsets} from "./data";
     @for (mindset of mindsets(); track mindset.content) {
       <div class="mb-10 last-of-type:mb-0">
         @if (mindset.type === 'text') {
-          <blockquote class="p-5 sm:p-9 relative shadow-lg rounded-lg border border-gray-100">
+          <blockquote class="p-5 sm:p-9 relative shadow-lg rounded-lg border border-gray-400">
             <p class="text-gray-800 text-base sm:text-lg">"{{ mindset.content }}"</p>
 
             @if (mindset.author !== '') {
-              <span class="block mt-4 sm:mt-5 text-right text-sm sm:text-base text-primary-500" style="color: #49CCF9">
+              <span class="block mt-4 sm:mt-5 text-right text-sm sm:text-base text-primary-500" style="color: #ff117a">
               — {{ mindset.author }}
               </span>
             }
           </blockquote>
         }
-
         @if (mindset.type === 'img') {
           <img class="w-full max-w-2xl" [src]="mindset.content" alt="ss">
         }
