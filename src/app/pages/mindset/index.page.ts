@@ -20,7 +20,7 @@ import {mindsets} from "./data";
             <p class="text-gray-800 text-base sm:text-lg">"{{ mindset.content }}"</p>
 
             @if (mindset.author !== '') {
-              <span class="block mt-4 sm:mt-5 text-right text-sm sm:text-base text-primary-500" style="color: #ff117a">
+              <span class="block mt-4 sm:mt-5 text-right text-sm sm:text-base text-pink-500">
               — {{ mindset.author }}
               </span>
             }

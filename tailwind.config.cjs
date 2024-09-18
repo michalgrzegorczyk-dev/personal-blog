@@ -41,6 +41,9 @@ module.exports = {
           '950': '#211a46'
         },
         gray: colors.gray,
+        pink: {
+          '500': '#ff117a',
+        }
       },
     },
   },
