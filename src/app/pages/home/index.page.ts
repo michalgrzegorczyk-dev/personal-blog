@@ -15,7 +15,7 @@ import MindsetComponent from "../mindset/index.page";
       <p class="text-sm mb-5" style="font-size: 1.2rem">{{ paragraph }}</p>
     }
 
-    <div class="flex space-x-4 mt-5">
+    <div class="flex space-x-8 mt-5">
       @for (social of socialMedia; track social.name) {
         <a class="font-semibold underline" style="font-size: 1.12rem" [href]="social.url" target="_blank" [attr.aria-label]="social.name">{{ social.name }}</a>
       }
@@ -23,15 +23,15 @@ import MindsetComponent from "../mindset/index.page";
 
     <div class="mb-14 mt-16 h-px bg-gray-400"></div>
 
-    <app-blog [postLimit]="2"></app-blog>
+    <app-blog [limit]="3" title="3 latest blog posts"></app-blog>
 
     <div class="mb-14 mt-16 h-px bg-gray-400"></div>
 
-    <app-mindset></app-mindset>
+    <app-mindset [limit]="3" title="3 random mind space picks"></app-mindset>
 
     <div class="mb-14 mt-16 h-px bg-gray-400"></div>
 
-    <app-productivity></app-productivity>
+    <app-productivity [limit]="3" title="top 3 productivity ideas"></app-productivity>
   `,
 })
 export default class HomeComponent {

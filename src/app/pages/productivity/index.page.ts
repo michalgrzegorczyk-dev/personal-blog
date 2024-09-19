@@ -1,4 +1,4 @@
-import {Component, ChangeDetectionStrategy} from '@angular/core';
+import {Component, ChangeDetectionStrategy, input} from '@angular/core';
 import {RouterLink} from '@angular/router';
 
 // TODO: Turn these productivity posts into MDX
@@ -8,9 +8,9 @@ import {RouterLink} from '@angular/router';
   imports: [RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <h2 class="mb-6">productivity</h2>
+    <h2 class="mb-6">{{ title() }}</h2>
 
-    <div class="block mb-4 p-5 shadow-lg rounded-lg border border-gray-400 bg-white">
+    <div class="block mb-4 p-7 shadow-lg rounded-lg border border-gray-400 bg-white">
       <h3 class="mb-3">block websites that you know distract you ⛔</h3>
       <p class="mb-7 text-sm">
         This productivity hack taught my brain that distracting
@@ -22,21 +22,19 @@ import {RouterLink} from '@angular/router';
         I have to go into the terminal, remind what was the command, edit some files, and save them, which takes more
         time and makes me rethink my
         decision before doing it.
-        <br><br>
-        The approach is relatively easy to achieve and can be set up in a minute. Please follow the commands below.
       </p>
 
       <ul>
         <li class="text-pink-500 mb-6 text-base font-medium" style="font-size: 1.15rem">1. Open terminal and run following command:<br>
           <code class="flex flex-col space-y-0.5 items-center bg-gray-50 p-5 mt-2 text-primary-500">
-            <p class="font-medium text-xs text-primary-950 w-full">sudo nano /etc/hosts</p>
+            <p class="font-semibold text-xs text-primary-950 w-full">sudo nano /etc/hosts</p>
           </code>
         </li>
-        <li class="text-pink-500 text-base font-medium" style="font-size: 1.15rem ">2. Add websites, which you would like to block, e.g.: <br>
+        <li class="text-pink-500 text-base font-medium" style="font-size: 1.15rem">2. Add websites, which you would like to block, e.g.: <br>
           <code class="flex flex-col space-y-0.5 items-center bg-gray-50 p-5 mt-2 text-primary-500">
-            <p class="font-medium text-primary-950 text-xs w-full">127.0.0.1 www.facebook.com</p>
-            <p class="font-medium text-primary-950 text-xs w-full">127.0.0.1 www.x.com</p>
-            <p class="font-medium text-primary-950 text-xs w-full">127.0.0.1 www.tiktok.com</p>
+            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.facebook.com</p>
+            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.x.com</p>
+            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.tiktok.com</p>
           </code>
         </li>
       </ul>
@@ -44,4 +42,6 @@ import {RouterLink} from '@angular/router';
   `,
 })
 export default class ProductivityComponent {
+  limit = input(3);
+  title = input('productivity');
 };

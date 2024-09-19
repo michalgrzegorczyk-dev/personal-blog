@@ -62,10 +62,10 @@ class FooterComponent {
 
             <!-- Navigation Links for Desktop -->
             <div class="hidden lg:flex flex-row space-x-0 ml-auto text-gray-900 hover:text-primary-500">
-              <a href="/blog" class="font-semibold text-sm underline pr-10">blog</a>
-              <a href="/mindset" class="font-semibold text-sm underline pr-10">mindset</a>
-              <a href="/productivity" class="font-semibold text-sm  underline pr-10">productivity</a>
-              <a href="/resources" class="font-semibold text-sm underline">resources</a>
+              <a href="/blog" class="font-semibold text-sm underline pr-10" style="font-size: 1.14rem">blog</a>
+              <a href="/mindset" class="font-semibold text-sm underline pr-10" style="font-size: 1.14rem">mindset</a>
+              <a href="/productivity" class="font-semibold text-sm  underline pr-10" style="font-size: 1.14rem">productivity</a>
+              <a href="/resources" class="font-semibold text-sm underline" style="font-size: 1.14rem">resources</a>
             </div>
           </nav>
 

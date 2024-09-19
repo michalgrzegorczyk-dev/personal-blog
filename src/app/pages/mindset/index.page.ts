@@ -1,9 +1,7 @@
-import {Component, ChangeDetectionStrategy} from '@angular/core';
+import {Component, ChangeDetectionStrategy, signal, input, computed} from '@angular/core';
 import {RouterLink} from '@angular/router';
 import {NgForOf} from "@angular/common";
 import {mindsets} from "./data";
-
-// todo font-size 16px
 
 @Component({
   selector: 'app-mindset',
@@ -11,14 +9,14 @@ import {mindsets} from "./data";
   imports: [RouterLink, NgForOf],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <h2 class="mb-6">mind space</h2>
+    <h2 class="mb-6">{{ title() ?? 'mind space' }}</h2>
 
-    @for (mindset of mindsets(); track mindset.content) {
+    @for (mindset of mindsetsInternal(); track mindset.content) {
       <div class="mb-10 last-of-type:mb-0">
         @if (mindset.type === 'text') {
-          <blockquote class="p-5 sm:p-9 relative shadow-lg rounded-lg border border-gray-400">
-<!--            <p class="text-gray-800 text-base sm:text-xl">"{{ mindset.content }}"</p>-->
-            <p class="text-gray-800 text-base italic" style="font-size: 1.25rem">"{{ mindset.content }}"</p>
+          <blockquote class="p-12 relative shadow-lg rounded-lg border border-gray-400">
+            <!--            <p class="text-gray-800 text-base sm:text-xl">"{{ mindset.content }}"</p>-->
+            <p class="text-gray-900 font-medium text-base italic" style="font-size: 1.3rem">"{{ mindset.content }}"</p>
 
             @if (mindset.author !== '') {
               <span class="block mt-4 sm:mt-5 text-right text-sm text-pink-500">
@@ -40,5 +38,7 @@ import {mindsets} from "./data";
   `
 })
 export default class MindsetComponent {
-  readonly mindsets = mindsets;
+  readonly title = input('mind space');
+  readonly limit = input(3);
+  readonly mindsetsInternal = computed(() => mindsets().slice(0, this.limit()));
 };
