@@ -10,7 +10,7 @@ import {NgClass, NgIf, DOCUMENT} from "@angular/common";
       <div class="mt-14 sm:mt-16 flex flex-col items-center">
         <div class="mb-4 flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
           <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-2 text-xs text-gray-600">
-            <a href="http://localhost:5173/" class="font-semibold mx-0 underline">michalgrzegorczyk.dev</a>
+            <a href="/" class="font-semibold mx-0 underline">michalgrzegorczyk.dev</a>
             <div class="hidden sm:block"> •</div>
             <div>© copyright {{ currentYear() }}</div>
             <div class="hidden sm:block"> •</div>
@@ -36,8 +36,8 @@ class FooterComponent {
         <div class="lg:sticky lg:top-20">
           <nav class="mt-4 flex items-center justify-between px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative">
             <div class="flex flex-row space-x-0 pr-10">
-              <a href="/" class="text-lg text-gray-900">
-                <span class="font-semibold underline hover:text-gray-900">michalgrzegorczyk.dev</span>
+              <a href="/" class="text-lg text-gray-900 hover:text-gray-950">
+                <span class="font-semibold underline">michalgrzegorczyk.dev</span>
                 👨🏻‍💻
               </a>
             </div>

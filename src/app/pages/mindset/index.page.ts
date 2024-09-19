@@ -11,7 +11,7 @@ import {mindsets} from "./data";
   imports: [RouterLink, NgForOf],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <h2 class="mb-4">mind space</h2>
+    <h2 class="mb-6">mind space</h2>
 
     @for (mindset of mindsets(); track mindset.content) {
       <div class="mb-10 last-of-type:mb-0">

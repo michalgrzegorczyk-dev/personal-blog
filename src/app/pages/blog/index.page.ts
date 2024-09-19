@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink],
   template: `
-    <h2 class="mb-4">blog posts</h2>
+    <h2 class="mb-6">blog posts</h2>
 
     @for (post of postsToDisplay(); track post.attributes.slug) {
       <a [routerLink]="['/blog/', post.attributes.slug]" class="block mb-6 p-5 shadow-lg rounded-lg border border-gray-400">

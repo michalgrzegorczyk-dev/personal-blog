@@ -75,7 +75,7 @@ module.exports = {
       },
       'p': {
         fontSize: theme('fontSize.lg'),
-        color: theme('colors.gray.800'),
+        color: theme('colors.gray.900'),
       },
       'code': {
         color: theme('colors.indigo.500'),

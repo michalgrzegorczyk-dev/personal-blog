@@ -12,7 +12,7 @@ import MindsetComponent from "../mindset/index.page";
     <h1 class="mb-6 leading-10">{{ headerTitle }}</h1>
 
     @for (paragraph of aboutMeParagraphs; track $index) {
-      <p class="text-sm mb-3" style="font-size: 1.2rem">{{ paragraph }}</p>
+      <p class="text-sm mb-5" style="font-size: 1.2rem">{{ paragraph }}</p>
     }
 
     <div class="flex space-x-4 mt-5">
@@ -21,15 +21,15 @@ import MindsetComponent from "../mindset/index.page";
       }
     </div>
 
-    <div class="mb-10 mt-12 h-px bg-gray-400"></div>
+    <div class="mb-14 mt-16 h-px bg-gray-400"></div>
 
     <app-blog [postLimit]="2"></app-blog>
 
-    <div class="mb-10 mt-12 h-px bg-gray-400"></div>
+    <div class="mb-14 mt-16 h-px bg-gray-400"></div>
 
     <app-mindset></app-mindset>
 
-    <div class="mb-10 mt-12 h-px bg-gray-400"></div>
+    <div class="mb-14 mt-16 h-px bg-gray-400"></div>
 
     <app-productivity></app-productivity>
   `,

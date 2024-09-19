@@ -8,7 +8,7 @@ import {RouterLink} from '@angular/router';
   imports: [RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <h2 class="mb-4">productivity</h2>
+    <h2 class="mb-6">productivity</h2>
 
     <div class="block mb-4 p-5 shadow-lg rounded-lg border border-gray-400 bg-white">
       <h3 class="mb-3">block websites that you know distract you ⛔</h3>
@@ -29,14 +29,14 @@ import {RouterLink} from '@angular/router';
       <ul>
         <li class="text-pink-500 mb-6 text-base font-medium" style="font-size: 1.15rem">1. Open terminal and run following command:<br>
           <code class="flex flex-col space-y-0.5 items-center bg-gray-50 p-5 mt-2 text-primary-500">
-            <p class="font-semibold text-xs text-primary-900 w-full">sudo nano /etc/hosts</p>
+            <p class="font-medium text-xs text-primary-950 w-full">sudo nano /etc/hosts</p>
           </code>
         </li>
         <li class="text-pink-500 text-base font-medium" style="font-size: 1.15rem ">2. Add websites, which you would like to block, e.g.: <br>
           <code class="flex flex-col space-y-0.5 items-center bg-gray-50 p-5 mt-2 text-primary-500">
-            <p class="font-semibold text-primary-900 text-xs w-full">127.0.0.1 www.facebook.com</p>
-            <p class="font-semibold text-primary-900 text-xs w-full">127.0.0.1 www.x.com</p>
-            <p class="font-semibold text-primary-900 text-xs w-full">127.0.0.1 www.tiktok.com</p>
+            <p class="font-medium text-primary-950 text-xs w-full">127.0.0.1 www.facebook.com</p>
+            <p class="font-medium text-primary-950 text-xs w-full">127.0.0.1 www.x.com</p>
+            <p class="font-medium text-primary-950 text-xs w-full">127.0.0.1 www.tiktok.com</p>
           </code>
         </li>
       </ul>
