@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1faae442-862f-421c-ad7b-665352a0423c/deploy-status)](https://app.netlify.com/sites/michalgrzegorczyk-dev/deploys)
 
-# Analog App
+# test Analog App
 
 This project was generated with [Analog](https://analogjs.org), the fullstack meta-framework for Angular.
 
