@@ -14,9 +14,9 @@ import { RouterLink } from '@angular/router';
       <a [routerLink]="['/blog/', post.attributes.slug]" class="block mb-6 p-5 shadow-lg rounded-lg border border-gray-400">
         <h3>{{ post.attributes.title }}</h3>
         <p class="text-gray-500 text-xs mb-4">last updated 27 days ago</p>
-        <p>{{ post.attributes.description }}</p>
+        <p class="text-sm" style="font-size: 1.16rem">{{ post.attributes.description }}</p>
 
-        <p class="font-semibold text-primary-500 mt-4 underline">read more</p>
+        <p class="font-semibold text-primary-500 mt-4 underline text-xs">read more</p>
       </a>
     }
   `,

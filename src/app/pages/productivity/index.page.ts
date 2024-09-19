@@ -12,7 +12,7 @@ import {RouterLink} from '@angular/router';
 
     <div class="block mb-4 p-5 shadow-lg rounded-lg border border-gray-400 bg-white">
       <h3 class="mb-3">block websites that you know distract you ⛔</h3>
-      <p class="mb-7">
+      <p class="mb-7 text-sm">
         This productivity hack taught my brain that distracting
         websites are not available, so I don't even try to open them anymore.
         So whenever you try to visit these websites, you'll see "This site can't be reached," which is exactly what
@@ -27,16 +27,16 @@ import {RouterLink} from '@angular/router';
       </p>
 
       <ul>
-        <li class="text-pink-500 mb-6 text-base">1. Open terminal and run following command:<br>
-          <code class="flex flex-col items-center bg-gray-50 rounded-lg p-5 mt-2 text-primary-500 border">
-            <p class="font-semibold text-xs text-gray-800 w-full">sudo nano /etc/hosts</p>
+        <li class="text-pink-500 mb-6 text-base font-medium" style="font-size: 1.15rem">1. Open terminal and run following command:<br>
+          <code class="flex flex-col space-y-0.5 items-center bg-gray-50 p-5 mt-2 text-primary-500">
+            <p class="font-semibold text-xs text-primary-900 w-full">sudo nano /etc/hosts</p>
           </code>
         </li>
-        <li class="text-pink-500 text-base">2. Add websites, which you would like to block, e.g.: <br>
-          <code class="flex flex-col items-center bg-gray-50 rounded-lg p-5 mt-2 text-primary-500 border">
-            <p class="font-semibold text-xs text-gray-800 w-full">127.0.0.1 www.facebook.com</p>
-            <p class="font-semibold text-xs text-gray-800 w-full">127.0.0.1 www.x.com</p>
-            <p class="font-semibold text-xs text-gray-800 w-full">127.0.0.1 www.tiktok.com</p>
+        <li class="text-pink-500 text-base font-medium" style="font-size: 1.15rem ">2. Add websites, which you would like to block, e.g.: <br>
+          <code class="flex flex-col space-y-0.5 items-center bg-gray-50 p-5 mt-2 text-primary-500">
+            <p class="font-semibold text-primary-900 text-xs w-full">127.0.0.1 www.facebook.com</p>
+            <p class="font-semibold text-primary-900 text-xs w-full">127.0.0.1 www.x.com</p>
+            <p class="font-semibold text-primary-900 text-xs w-full">127.0.0.1 www.tiktok.com</p>
           </code>
         </li>
       </ul>

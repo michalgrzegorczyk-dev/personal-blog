@@ -12,11 +12,11 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        xs: '0.9rem',
-        sm: '0.95rem',
-        base: '1rem',
-        lg:  '1.075rem',
-        xl:  '1.5rem',
+        xs: '1.05rem',
+        sm: '1.15rem',
+        base: '1.2rem',
+        lg:  '1.3rem',
+        xl:  '1.6rem',
         '2xl': '6rem',
         '3xl': '6rem',
         '4xl': '6rem',

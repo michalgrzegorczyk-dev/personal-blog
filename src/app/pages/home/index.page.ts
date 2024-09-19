@@ -12,12 +12,12 @@ import MindsetComponent from "../mindset/index.page";
     <h1 class="mb-6 leading-10">{{ headerTitle }}</h1>
 
     @for (paragraph of aboutMeParagraphs; track $index) {
-      <p class="text-lg mb-3">{{ paragraph }}</p>
+      <p class="text-sm mb-3" style="font-size: 1.2rem">{{ paragraph }}</p>
     }
 
     <div class="flex space-x-4 mt-5">
       @for (social of socialMedia; track social.name) {
-        <a class="font-semibold underline" [href]="social.url" target="_blank" [attr.aria-label]="social.name">{{ social.name }}</a>
+        <a class="font-semibold underline" style="font-size: 1.12rem" [href]="social.url" target="_blank" [attr.aria-label]="social.name">{{ social.name }}</a>
       }
     </div>
 
@@ -54,7 +54,7 @@ export default class HomeComponent {
     "how products make money, which is pushing me towards product management. I mainly focus on delivery, but building team spirit and keeping things open and clear are very important to me as well.",
 
     `Here, on this website, I'll share my thoughts, code, memes, and talk about productivity. I hope you'll find something useful here, and if you have
-    any questions or suggestions, feel free to reach out to me on social media or Discord.`
+    any questions or suggestions, feel free to reach out to me.`
   ];
   socialMedia = [
     {name: "linkedin", url: "https://www.linkedin.com/in/michalgrzegorczyk-dev/"},

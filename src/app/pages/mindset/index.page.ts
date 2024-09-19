@@ -17,10 +17,11 @@ import {mindsets} from "./data";
       <div class="mb-10 last-of-type:mb-0">
         @if (mindset.type === 'text') {
           <blockquote class="p-5 sm:p-9 relative shadow-lg rounded-lg border border-gray-400">
-            <p class="text-gray-800 text-base sm:text-lg">"{{ mindset.content }}"</p>
+<!--            <p class="text-gray-800 text-base sm:text-xl">"{{ mindset.content }}"</p>-->
+            <p class="text-gray-800 text-base italic" style="font-size: 1.25rem">"{{ mindset.content }}"</p>
 
             @if (mindset.author !== '') {
-              <span class="block mt-4 sm:mt-5 text-right text-sm sm:text-base text-pink-500">
+              <span class="block mt-4 sm:mt-5 text-right text-sm text-pink-500">
               — {{ mindset.author }}
               </span>
             }
