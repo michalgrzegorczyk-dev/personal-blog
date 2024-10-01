@@ -1,11 +1,13 @@
 import {Component, ChangeDetectionStrategy, input} from '@angular/core';
 import {RouterLink} from '@angular/router';
+import {Highlight} from "ngx-highlightjs";
+import {HighlightLineNumbers} from "ngx-highlightjs/line-numbers";
 
 // TODO: Turn these productivity posts into MDX
 @Component({
   selector: 'app-productivity',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, Highlight, HighlightLineNumbers],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <h2 class="mb-6">{{ title() }}</h2>
@@ -31,17 +33,28 @@ import {RouterLink} from '@angular/router';
           </code>
         </li>
         <li class="text-pink-500 text-base font-medium" style="font-size: 1.15rem">2. Add websites, which you would like to block, e.g.: <br>
-          <code class="flex flex-col space-y-0.5 items-center bg-gray-50 p-5 mt-2 text-primary-500">
-            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.facebook.com</p>
-            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.x.com</p>
-            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.tiktok.com</p>
-          </code>
+          <pre>
+      <code [highlight]="codeForHighlight"
+            language="ts"
+            lineNumbers></code>
+    </pre>
+<!--          <code class="flex flex-col space-y-0.5 items-center bg-gray-50 p-5 mt-2 text-primary-500">-->
+<!--            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.facebook.com</p>-->
+<!--            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.x.com</p>-->
+<!--            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.tiktok.com</p>-->
+<!--          </code>-->
         </li>
       </ul>
     </div>
+
   `,
 })
 export default class ProductivityComponent {
   limit = input(3);
   title = input('productivity');
+  codeForHighlight = `  127.0.0.1 www.facebook.com
+  127.0.0.1 www.x.com
+  127.0.0.1 www.tiktok.com
+  `;
+
 };

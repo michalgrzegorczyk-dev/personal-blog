@@ -44,6 +44,9 @@ dependencies:
   front-matter:
     specifier: ^4.0.2
     version: 4.0.2
+  highlight.js:
+    specifier: ^11.10.0
+    version: 11.10.0
   marked:
     specifier: ^5.0.2
     version: 5.1.2
@@ -56,6 +59,9 @@ dependencies:
   marked-mangle:
     specifier: ^1.1.7
     version: 1.1.9(marked@5.1.2)
+  ngx-highlightjs:
+    specifier: ^12.0.0
+    version: 12.0.0(@angular/common@18.2.4)(@angular/core@18.2.4)
   prismjs:
     specifier: ^1.29.0
     version: 1.29.0
@@ -8021,6 +8027,11 @@ packages:
     hasBin: true
     dev: true
 
+  /highlight.js@11.10.0:
+    resolution: {integrity: sha512-SYVnVFswQER+zu1laSya563s+F8VDGt7o35d4utbamowvUNLLMovFqwCLSocpZTz3MgaSRA1IbqRWZv97dtErQ==}
+    engines: {node: '>=12.0.0'}
+    dev: false
+
   /homedir-polyfill@1.0.3:
     resolution: {integrity: sha512-eSmmWE5bZTK2Nou4g0AI3zZ9rswp7GRKoKXS1BLUkvPviOqs4YTN1djQIqrXy9k5gEtdLPy86JjRwsNM9tnDcA==}
     engines: {node: '>=0.10.0'}
@@ -9587,6 +9598,18 @@ packages:
   /neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
+
+  /ngx-highlightjs@12.0.0(@angular/common@18.2.4)(@angular/core@18.2.4):
+    resolution: {integrity: sha512-1lSUv3hNpriHewwe8zz8eMX6q/Tcq1ZCsJ1GitBsr86y39e+q4U/s8LKE7rvK6SVAbQlUuopdbbKWR0zjihjLg==}
+    peerDependencies:
+      '@angular/common': '>=17.0.0'
+      '@angular/core': '>=17.0.0'
+    dependencies:
+      '@angular/common': 18.2.4(@angular/core@18.2.4)(rxjs@7.5.7)
+      '@angular/core': 18.2.4(rxjs@7.5.7)(zone.js@0.14.10)
+      highlight.js: 11.10.0
+      tslib: 2.7.0
+    dev: false
 
   /nice-napi@1.0.2:
     resolution: {integrity: sha512-px/KnJAJZf5RuBGcfD+Sp2pAKq0ytz8j+1NehvgIGFkvtvFrDM3T8E4x/JJODXK9WZow8RRGrbA9QQ3hs+pDhA==}
