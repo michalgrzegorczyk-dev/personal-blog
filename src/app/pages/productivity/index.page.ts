@@ -28,21 +28,20 @@ import {HighlightLineNumbers} from "ngx-highlightjs/line-numbers";
 
       <ul>
         <li class="text-pink-500 mb-6 text-base font-medium" style="font-size: 1.15rem">1. Open terminal and run following command:<br>
-          <code class="flex flex-col space-y-0.5 items-center bg-gray-50 p-5 mt-2 text-primary-500">
-            <p class="font-semibold text-xs text-primary-950 w-full">sudo nano /etc/hosts</p>
-          </code>
+        <pre>
+          <code [highlight]="codeForHighlight1" language="ts" lineNumbers></code>
+        </pre>
         </li>
-        <li class="text-pink-500 text-base font-medium" style="font-size: 1.15rem">2. Add websites, which you would like to block, e.g.: <br>
-          <pre>
-      <code [highlight]="codeForHighlight"
-            language="ts"
-            lineNumbers></code>
-    </pre>
-<!--          <code class="flex flex-col space-y-0.5 items-center bg-gray-50 p-5 mt-2 text-primary-500">-->
-<!--            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.facebook.com</p>-->
-<!--            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.x.com</p>-->
-<!--            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.tiktok.com</p>-->
-<!--          </code>-->
+        <li class="text-pink-500 text-base font-medium" style="font-size: 1.15rem">2. Add websites, which you would like
+          to block, e.g.: <br>
+        <pre>
+          <code [highlight]="codeForHighlight2" language="ts" lineNumbers></code>
+        </pre>
+          <!--          <code class="flex flex-col space-y-0.5 items-center bg-gray-50 p-5 mt-2 text-primary-500">-->
+          <!--            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.facebook.com</p>-->
+          <!--            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.x.com</p>-->
+          <!--            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.tiktok.com</p>-->
+          <!--          </code>-->
         </li>
       </ul>
     </div>
@@ -52,9 +51,13 @@ import {HighlightLineNumbers} from "ngx-highlightjs/line-numbers";
 export default class ProductivityComponent {
   limit = input(3);
   title = input('productivity');
-  codeForHighlight = `  127.0.0.1 www.facebook.com
+
+  codeForHighlight1 = `  sudo nano /etc/hosts`;
+
+  codeForHighlight2 = `  127.0.0.1 www.facebook.com
   127.0.0.1 www.x.com
   127.0.0.1 www.tiktok.com
   `;
+
 
 };
