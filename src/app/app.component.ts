@@ -14,7 +14,7 @@ import {NgClass, NgIf, DOCUMENT} from "@angular/common";
             <div class="hidden sm:block"> •</div>
             <div>© copyright {{ currentYear() }}</div>
             <div class="hidden sm:block"> •</div>
-            <a href="https://github.com/michalgrzegorczyk-dev/website" target="_blank" class="underline font-semibold mx-0">source code</a>
+            <a href="https://github.com/michalgrzegorczyk-dev/personal-blog" target="_blank" class="underline font-semibold mx-0">source code</a>
           </div>
         </div>
       </div>
