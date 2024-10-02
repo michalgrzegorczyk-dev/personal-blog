@@ -29,11 +29,11 @@ import {HighlightLineNumbers} from "ngx-highlightjs/line-numbers";
       <ul class="mt-8">
         <li class="text-pink-500 text-sm">
           1. Open terminal and run following command:
-          <pre class="mt-3 mb-9"><code class="hljs typescript" style="font-size: 0.96rem">sudo nano /etc/hosts</code></pre>
+          <pre class="mt-2 mb-9"><code class="hljs typescript" style="font-size: 0.96rem">sudo nano /etc/hosts</code></pre>
         </li>
         <li class="text-pink-500 text-sm">2. Add websites, which you would like
           to block, e.g.:
-          <pre class="mt-3"><code class="hljs typescript" style="font-size: 0.96rem">127.0.0.1 www.facebook.com
+          <pre class="mt-2"><code class="hljs typescript" style="font-size: 0.96rem">127.0.0.1 www.facebook.com
 127.0.0.1 www.x.com
 127.0.0.1 www.tiktok.com</code></pre>
 <!--        <pre>-->

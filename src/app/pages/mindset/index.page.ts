@@ -26,7 +26,7 @@ import {mindsets} from "./data";
           </blockquote>
         }
         @if (mindset.type === 'img') {
-          <img class="w-full max-w-2xl" [src]="mindset.content" alt="ss">
+          <img class="w-full max-w-2xl rounded-lg" [src]="mindset.content" alt="ss">
         }
       </div>
     }
