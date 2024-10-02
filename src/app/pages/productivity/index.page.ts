@@ -25,23 +25,17 @@ import {RouterLink} from '@angular/router';
       </p>
 
       <ul class="mt-8">
-        <li class="text-pink-500 text-sm">
+        <li class="text-pink-500 text-sm mb-6">
           1. Open terminal and run following command:
-          <pre class="mt-2 mb-9"><code class="hljs typescript" style="font-size: 0.96rem">sudo nano /etc/hosts</code></pre>
+          <pre class="language-ts rounded-md"><code class="language-ts">sudo nano /etc/hosts</code></pre>
         </li>
+
+
         <li class="text-pink-500 text-sm">2. Add websites, which you would like
           to block, e.g.:
-          <pre class="mt-2"><code class="hljs typescript" style="font-size: 0.96rem">127.0.0.1 www.facebook.com
+          <pre class="language-ts rounded-md"><code class="language-ts">127.0.0.1 www.facebook.com
 127.0.0.1 www.x.com
 127.0.0.1 www.tiktok.com</code></pre>
-<!--        <pre>-->
-<!--          <code [highlight]="codeForHighlight2" language="ts" lineNumbers></code>-->
-<!--        </pre>-->
-          <!--          <code class="flex flex-col space-y-0.5 items-center bg-gray-50 p-5 mt-2 text-primary-500">-->
-          <!--            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.facebook.com</p>-->
-          <!--            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.x.com</p>-->
-          <!--            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.tiktok.com</p>-->
-          <!--          </code>-->
         </li>
       </ul>
     </div>
