@@ -1,13 +1,11 @@
 import {Component, ChangeDetectionStrategy, input} from '@angular/core';
 import {RouterLink} from '@angular/router';
-import {Highlight} from "ngx-highlightjs";
-import {HighlightLineNumbers} from "ngx-highlightjs/line-numbers";
 
 // TODO: Turn these productivity posts into MDX
 @Component({
   selector: 'app-productivity',
   standalone: true,
-  imports: [RouterLink, Highlight, HighlightLineNumbers],
+  imports: [RouterLink, Highlight],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <h2 class="mb-6">{{ title() }}</h2>
