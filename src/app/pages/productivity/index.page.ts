@@ -12,7 +12,7 @@ import {HighlightLineNumbers} from "ngx-highlightjs/line-numbers";
   template: `
     <h2 class="mb-6">{{ title() }}</h2>
 
-    <div class="block mb-4 p-7 shadow-lg rounded-lg border border-gray-400 bg-white">
+    <div class="block mb-4 p-7 pb-8 shadow-lg rounded-lg border border-gray-400 bg-white">
       <h3 class="mb-3">block websites that you know distract you ⛔</h3>
       <p class="mb-7 text-sm">
         This productivity hack taught my brain that distracting
@@ -26,17 +26,19 @@ import {HighlightLineNumbers} from "ngx-highlightjs/line-numbers";
         decision before doing it.
       </p>
 
-      <ul>
-        <li class="text-pink-500 mb-6 text-base font-medium" style="font-size: 1.15rem">1. Open terminal and run following command:<br>
-        <pre>
-          <code [highlight]="codeForHighlight1" language="ts" lineNumbers></code>
-        </pre>
+      <ul class="mt-8">
+        <li class="text-pink-500 text-sm">
+          1. Open terminal and run following command:
+          <pre class="mt-3 mb-9"><code class="hljs typescript" style="font-size: 0.96rem">sudo nano /etc/hosts</code></pre>
         </li>
-        <li class="text-pink-500 text-base font-medium" style="font-size: 1.15rem">2. Add websites, which you would like
-          to block, e.g.: <br>
-        <pre>
-          <code [highlight]="codeForHighlight2" language="ts" lineNumbers></code>
-        </pre>
+        <li class="text-pink-500 text-sm">2. Add websites, which you would like
+          to block, e.g.:
+          <pre class="mt-3"><code class="hljs typescript" style="font-size: 0.96rem">127.0.0.1 www.facebook.com
+127.0.0.1 www.x.com
+127.0.0.1 www.tiktok.com</code></pre>
+<!--        <pre>-->
+<!--          <code [highlight]="codeForHighlight2" language="ts" lineNumbers></code>-->
+<!--        </pre>-->
           <!--          <code class="flex flex-col space-y-0.5 items-center bg-gray-50 p-5 mt-2 text-primary-500">-->
           <!--            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.facebook.com</p>-->
           <!--            <p class="font-semibold text-primary-950 text-xs w-full">127.0.0.1 www.x.com</p>-->
@@ -54,7 +56,13 @@ export default class ProductivityComponent {
 
   codeForHighlight1 = `  sudo nano /etc/hosts`;
 
-  codeForHighlight2 = `  127.0.0.1 www.facebook.com
+  codeForHighlight2 =
+  `  # open terminal and run following command
+  sudo nano /etc/hosts
+
+  # Add websites, which you would like
+          to block, e.g.
+  127.0.0.1 www.facebook.com
   127.0.0.1 www.x.com
   127.0.0.1 www.tiktok.com
   `;

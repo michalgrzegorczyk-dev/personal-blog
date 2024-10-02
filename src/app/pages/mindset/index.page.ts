@@ -14,9 +14,9 @@ import {mindsets} from "./data";
     @for (mindset of mindsetsInternal(); track mindset.content) {
       <div class="mb-10 last-of-type:mb-0">
         @if (mindset.type === 'text') {
-          <blockquote class="p-12 relative shadow-lg rounded-lg border border-gray-400">
+          <blockquote class="p-8 relative shadow-lg rounded-lg border border-gray-400">
             <!--            <p class="text-gray-800 text-base sm:text-xl">"{{ mindset.content }}"</p>-->
-            <p class="text-gray-900 font-medium text-base italic" style="font-size: 1.3rem">"{{ mindset.content }}"</p>
+            <p class="text-gray-900 text-sm">"{{ mindset.content }}"</p>
 
             @if (mindset.author !== '') {
               <span class="block mt-4 sm:mt-5 text-right text-sm text-pink-500">
