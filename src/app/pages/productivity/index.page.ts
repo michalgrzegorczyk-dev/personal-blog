@@ -5,7 +5,7 @@ import {RouterLink} from '@angular/router';
 @Component({
   selector: 'app-productivity',
   standalone: true,
-  imports: [RouterLink, Highlight],
+  imports: [RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <h2 class="mb-6">{{ title() }}</h2>

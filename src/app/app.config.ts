@@ -3,7 +3,6 @@ import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideFileRouter, requestContextInterceptor } from '@analogjs/router';
 import { provideContent, withMarkdownRenderer } from '@analogjs/content';
-// import { withPrismHighlighter } from '@analogjs/content/prism-highlighter'; //todo
 
 export const appConfig: ApplicationConfig = {
   providers: [
