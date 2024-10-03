@@ -1,13 +1,13 @@
-import {Component, signal} from '@angular/core';
+import {Component, } from '@angular/core';
 import {RouterLink} from '@angular/router';
 import BlogComponent from "../blog/index.page";
 import ProductivityComponent from "../productivity/index.page";
-import MindsetComponent from "../mindset/index.page";
+import MindSpaceComponent from "../mind-space/index.page";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, BlogComponent, MindsetComponent, ProductivityComponent],
+  imports: [RouterLink, BlogComponent, MindSpaceComponent, ProductivityComponent],
   template: `
     <h1 class="mb-6 leading-10">{{ headerTitle }}</h1>
 
@@ -23,15 +23,15 @@ import MindsetComponent from "../mindset/index.page";
 
     <div class="mb-14 mt-16 h-px bg-gray-400"></div>
 
-    <app-blog [limit]="3" title="3 latest blog posts"></app-blog>
+    <app-blog [limit]="1" title="latest blog post"></app-blog>
 
     <div class="mb-14 mt-16 h-px bg-gray-400"></div>
 
-    <app-mindset [limit]="3" title="3 random mind space picks"></app-mindset>
+    <app-mind-space [limit]="3" title="mind space"></app-mind-space>
 
     <div class="mb-14 mt-16 h-px bg-gray-400"></div>
 
-    <app-productivity [limit]="3" title="top 3 productivity ideas"></app-productivity>
+    <app-productivity [limit]="3" title="latest productivity idea"></app-productivity>
   `,
 })
 export default class HomeComponent {

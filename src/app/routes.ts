@@ -1,6 +1,6 @@
 const routes = {
   blog: '/blog',
-  mindset: '/mindset',
+  mindSpace: '/mind-space',
   productivity: '/productivity',
   resources: '/productivity',
   home: '/'

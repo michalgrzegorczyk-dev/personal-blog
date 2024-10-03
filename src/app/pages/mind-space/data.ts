@@ -1,13 +1,13 @@
 import {signal} from "@angular/core";
 import {shuffle} from "../../utils";
 
-export type Mindset = {
+export type MindSpaceType = {
   content: string;
   author: string;
   type: 'text' | 'img';
 }
 
-export const mindsets = signal<Mindset[]>(shuffle([
+export const mindSpaceList = signal<MindSpaceType[]>(shuffle([
   {
     content: "The happiness of your life depends upon the quality of your thoughts.",
     author: "Marcus Aurelius",
