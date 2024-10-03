@@ -43,7 +43,7 @@ export default class ResourcesComponent {
           url: 'https://davembush.github.io/'
         },
         {
-          title: "A website full of passionate people who love Angular and everything related to it.",
+          title: "A website full of passionate people who love Angular, now merged with Angular in Depth - one of the most popular blog sites about Angular.",
           url: 'https://www.angular.love/'
         },
         {
