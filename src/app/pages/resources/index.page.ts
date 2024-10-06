@@ -50,6 +50,10 @@ export default class ResourcesComponent {
           title: "Angualr Sapce is created by Daniel Glejzner. The Hub for Learning and Growing as an Angular Developer.",
           url: 'https://www.angularspace.com/'
         },
+        {
+          title: 'Daniel Glejzner dev.to',
+          url: 'https://dev.to/danielglejzner'
+        }
       ]
     },
     {
