@@ -26,7 +26,7 @@ interface ResourceCategory {
         @for(link of category.links; track link.url) {
           <li class="mb-7 last-of-type:mb-8">
             <a [href]="link.url" class="underline">{{ link.url }}</a>
-            <p class="text-sm">{{ link.title }}</p>
+            <p class="text-xs">{{ link.title }}</p>
           </li>
         }
       </ul>
@@ -39,7 +39,7 @@ export default class ResourcesComponent {
       name: 'angular',
       links: [
         {
-          title: "It's a blog by an experienced guy who focuses on Angular. He shares his programming notes, mostly about Angular, and works at a company I want to join. It’s probably a good idea to stay up to date with his content in case we cross paths in an interview again.",
+          title: "It's a blog by an experienced guy who focuses on Angular. He shares his programming notes, mostly about Angular.",
           url: 'https://davembush.github.io/'
         },
         {
