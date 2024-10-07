@@ -3,11 +3,12 @@ import {RouterLink} from '@angular/router';
 import BlogComponent from "../blog/index.page";
 import ProductivityComponent from "../productivity/index.page";
 import MindSpaceComponent from "../mind-space/index.page";
+import ResourcesComponent from "../resources/index.page";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, BlogComponent, MindSpaceComponent, ProductivityComponent],
+  imports: [RouterLink, BlogComponent, MindSpaceComponent, ProductivityComponent, ResourcesComponent],
   template: `
     <h1 class="mb-6 leading-10">{{ headerTitle }}</h1>
 
@@ -32,6 +33,10 @@ import MindSpaceComponent from "../mind-space/index.page";
     <div class="mb-14 mt-16 h-px bg-gray-400"></div>
 
     <app-productivity [limit]="3" title="latest productivity idea"></app-productivity>
+
+    <div class="mb-14 mt-16 h-px bg-gray-400"></div>
+
+    <app-resources></app-resources>
   `,
 })
 export default class HomeComponent {

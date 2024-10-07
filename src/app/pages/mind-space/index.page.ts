@@ -17,7 +17,7 @@ import { mindSpaceList } from "./data";
             <p class="text-gray-900 text-sm">"{{ currentMindSpace().content }}"</p>
 
             @if (currentMindSpace().author !== '') {
-              <span class="block mt-4 sm:mt-5 text-right text-sm text-pink-500">
+              <span class="block mt-4 sm:mt-5 text-right text-sm text-pink-500 font-medium">
               — {{ currentMindSpace().author }}
               </span>
             }

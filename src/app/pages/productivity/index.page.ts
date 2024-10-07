@@ -25,14 +25,14 @@ import {RouterLink} from '@angular/router';
       </p>
 
       <ul class="mt-8">
-        <li class="text-pink-500 text-sm mb-6">
-          1. Open terminal and run following command:
+        <li class="text-pink-500 text-sm mb-8 font-medium">
+          <span>1. Open terminal and run following command:</span>
           <pre class="language-ts rounded-md"><code class="language-ts">sudo nano /etc/hosts</code></pre>
         </li>
 
 
-        <li class="text-pink-500 text-sm">2. Add websites, which you would like
-          to block, e.g.:
+        <li class="text-pink-500 text-sm font-medium">
+          <span>2. Add websites, which you would like to block, e.g.:</span>
           <pre class="language-ts rounded-md"><code class="language-ts">127.0.0.1 www.facebook.com
 127.0.0.1 www.x.com
 127.0.0.1 www.tiktok.com</code></pre>

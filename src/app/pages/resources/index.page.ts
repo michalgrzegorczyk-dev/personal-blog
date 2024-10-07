@@ -13,24 +13,26 @@ interface ResourceCategory {
 }
 
 @Component({
-  selector: 'app-productivity',
+  selector: 'app-resources',
   standalone: true,
   imports: [RouterLink, NgForOf],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <h2 class="mb-4">resources</h2>
 
-    <ng-container *ngFor="let category of resourceCategories">
-      <h3 class="mb-4">{{ category.name }}</h3>
-      <ul>
-        @for(link of category.links; track link.url) {
-          <li class="mb-7 last-of-type:mb-8">
-            <a [href]="link.url" class="underline">{{ link.url }}</a>
-            <p class="text-xs">{{ link.title }}</p>
-          </li>
-        }
-      </ul>
-    </ng-container>
+    <div class="block mb-4 p-7 pb-8 shadow-lg rounded-lg border border-gray-400 bg-white">
+      <ng-container *ngFor="let category of resourceCategories">
+        <h3 class="mb-2 first-of-type:mt-0 mt-10">{{ category.name }}</h3>
+        <ul>
+          @for(link of category.links; track link.url) {
+            <li class="mb-4 mt-0 last-of-type:mb-0">
+              <a [href]="link.url" target="_blank" class="underline text-sm font-semibold">{{ link.url }}</a>
+<!--              <p class="text-sm">{{ link.title }}</p>-->
+            </li>
+          }
+        </ul>
+      </ng-container>
+    </div>
   `,
 })
 export default class ResourcesComponent {
@@ -39,19 +41,19 @@ export default class ResourcesComponent {
       name: 'angular',
       links: [
         {
-          title: "It's a blog by an experienced guy who focuses on Angular. He shares his programming notes, mostly about Angular.",
-          url: 'https://davembush.github.io/'
+          title: "",
+          url: 'https://davembush.github.io'
         },
         {
-          title: "A website full of passionate people who love Angular, now merged with Angular in Depth - one of the most popular blog sites about Angular.",
-          url: 'https://www.angular.love/'
+          title: "",
+          url: 'https://www.angular.love'
         },
         {
-          title: "Angualr Sapce is created by Daniel Glejzner. The Hub for Learning and Growing as an Angular Developer.",
-          url: 'https://www.angularspace.com/'
+          title: "",
+          url: 'https://www.angularspace.com'
         },
         {
-          title: 'Daniel Glejzner dev.to',
+          title: '',
           url: 'https://dev.to/danielglejzner'
         }
       ]
@@ -60,8 +62,8 @@ export default class ResourcesComponent {
       name: 'front end',
       links: [
         {
-          title: 'A quality website focused on advanced frontend techniques, scalable architectures, and solutions.',
-          url: 'https://frontendatscale.com/',
+          title: '',
+          url: 'https://frontendatscale.com',
         },
       ]
     },
