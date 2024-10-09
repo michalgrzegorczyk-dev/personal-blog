@@ -41,6 +41,11 @@ export const mindSpaceList = signal<MindSpaceType[]>(shuffle([
     author: "Addy Osmani",
   },
   {
+    content: "./mind/techdebt.jpeg",
+    type: 'img',
+    author: "monkeyuser.com",
+  },
+  {
     content: "The magic that you’re looking for is in the work you’re avoiding.",
     type: 'text',
     author: "",

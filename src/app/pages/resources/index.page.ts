@@ -67,5 +67,14 @@ export default class ResourcesComponent {
         },
       ]
     },
+    {
+      name: 'other',
+      links: [
+        {
+          title:'',
+          url: 'https://www.monkeyuser.com'
+        }
+      ]
+    }
   ];
 };
