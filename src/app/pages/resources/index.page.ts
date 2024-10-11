@@ -42,7 +42,7 @@ export default class ResourcesComponent {
       links: [
         {
           title: "",
-          link: "ducin.dev"
+          url: "ducin.dev/blog"
         },
         {
           title: "",
