@@ -42,19 +42,23 @@ export default class ResourcesComponent {
       links: [
         {
           title: "",
-          url: 'https://davembush.github.io'
+          link: "ducin.dev"
         },
         {
           title: "",
-          url: 'https://www.angular.love'
+          url: 'davembush.github.io'
         },
         {
           title: "",
-          url: 'https://www.angularspace.com'
+          url: 'angular.love'
+        },
+        {
+          title: "",
+          url: 'angularspace.com'
         },
         {
           title: '',
-          url: 'https://dev.to/danielglejzner'
+          url: 'dev.to/danielglejzner'
         }
       ]
     },
@@ -63,7 +67,7 @@ export default class ResourcesComponent {
       links: [
         {
           title: '',
-          url: 'https://frontendatscale.com',
+          url: 'frontendatscale.com',
         },
       ]
     },
@@ -72,7 +76,7 @@ export default class ResourcesComponent {
       links: [
         {
           title:'',
-          url: 'https://www.monkeyuser.com'
+          url: 'monkeyuser.com'
         }
       ]
     }
