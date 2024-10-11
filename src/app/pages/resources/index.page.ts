@@ -26,7 +26,7 @@ interface ResourceCategory {
         <ul>
           @for(link of category.links; track link.url) {
             <li class="mb-4 mt-0 last-of-type:mb-0">
-              <a [href]="link.url" target="_blank" class="underline text-sm font-semibold">{{ link.url }}</a>
+              <a [href]="link.url" target="_blank" class="underline text-sm font-semibold">{{ link.title }}</a>
 <!--              <p class="text-sm">{{ link.title }}</p>-->
             </li>
           }
@@ -41,24 +41,24 @@ export default class ResourcesComponent {
       name: 'angular',
       links: [
         {
-          title: "",
-          url: "ducin.dev/blog"
+          title: "ducin.dev/blog",
+          url: "https://ducin.dev/blog"
         },
         {
-          title: "",
-          url: 'davembush.github.io'
+          title: "davembush.github.io",
+          url: 'https://davembush.github.io'
         },
         {
-          title: "",
-          url: 'angular.love'
+          title: "angular.love",
+          url: 'https://angular.love'
         },
         {
-          title: "",
-          url: 'angularspace.com'
+          title: "angularspace.com",
+          url: 'https://angularspace.com'
         },
         {
-          title: '',
-          url: 'dev.to/danielglejzner'
+          title: 'dev.to/danielglejzner',
+          url: 'https://dev.to/danielglejzner'
         }
       ]
     },
@@ -66,8 +66,8 @@ export default class ResourcesComponent {
       name: 'front end',
       links: [
         {
-          title: '',
-          url: 'frontendatscale.com',
+          title: 'frontendatscale.com',
+          url: 'https://frontendatscale.com',
         },
       ]
     },
@@ -75,8 +75,8 @@ export default class ResourcesComponent {
       name: 'other',
       links: [
         {
-          title:'',
-          url: 'monkeyuser.com'
+          title: 'monkeyuser.com',
+          url: 'https://monkeyuser.com'
         }
       ]
     }
