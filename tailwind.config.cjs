@@ -61,7 +61,7 @@ module.exports = {
         letterSpacing: theme('letterSpacing.tight'),
       },
       'h1': {
-        fontSize: '1.85rem',
+        fontSize: '1.7rem',
         color: theme('colors.gray.900'),
       },
       'h2': {

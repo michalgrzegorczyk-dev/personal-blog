@@ -1,34 +1,29 @@
 ---
-title: This is an example blog post written in markdown!
-slug: 2022-12-27-test-post
-description: A messenge4r is a digital communication tool for real-time messaging, designed with front-end principles using HTML, CSS, and JavaScript. It includes features like media sharing, group chats, and encryption for secure and user-friendly communication.
+title: block websites that you know distract you ⛔
+slug: 2024-10-12-block-websites-that-you-know-distract-you
+description:
 coverImage: https://image4s.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80
 ---
 
-# Example Blog Post
 
-This is an example blog post written in markdown!
+# block websites that you know distract you ⛔
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This productivity hack taught my brain that distracting websites are not available, so I don't even try to open them anymore. So whenever you try to visit these websites, you'll see "This site can't be reached", which is exactly what I need.
+<br/>
+<br/>
+By the way, web extensions don't work for me because they're too easy to remove. With this method, I have to go into the terminal, remind what was the command, edit some files, and save them, which takes more time and makes me rethink my decision before doing it.
+<br/>
+<br/>
+1. Open terminal and run following command:
 
-```ts:contentlayer.config.ts
-export const Blog = defineDocumentType(() => ({
-  name: 'Blog',
-  filePathPattern: 'blog/**/*.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    date: { type: 'date', required: true },
-    tags: { type: 'list', of: { type: 'string' }, default: [] },
-    ...
-  },
-  computedFields: {
-    readingTime: { type: 'json', resolve: (doc) => readingTime(doc.body.raw) },
-    slug: {
-      type: 'string',
-      resolve: (doc) => doc._raw.flattenedPath.replace(/^.+?(\/)/, ''),
-    }
-    ...
-  },
-}))
+```ts
+sudo nano /etc/hosts
+```
+
+2. Add websites, which you would like to block, e.g.:
+
+```ts 
+127.0.0.1 www.facebook.com
+127.0.0.1 www.x.com
+127.0.0.1 www.tiktok.com
 ```
