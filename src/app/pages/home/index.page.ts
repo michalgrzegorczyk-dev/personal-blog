@@ -34,12 +34,11 @@ import {NgClass} from "@angular/common";
       >
       <div class="text-center sm:text-left flex-grow">
         <h3 class="text-xl font-semibold">Michal Grzegorczyk</h3>
-        <p class="text-sm text-gray-600 mb-2">Software Engineer & Freelancer</p>
+        <p class="text-xs text-gray-500 mb-2">Software Engineer & Freelancer</p>
         <div class="flex flex-wrap justify-center sm:justify-start gap-4 mt-3">
           @for (social of socialMedia; track social.name) {
             <a
-              class="font-semibold underline"
-              style="font-size: 1.12rem"
+              class="font-semibold underline text-xs"
               [href]="social.url"
               target="_blank"
               rel="noopener noreferrer"
@@ -77,13 +76,4 @@ export default class HomeComponent {
     {name: "discord", url: "https://discord.gg/aF2rvQDQ"},
     {name: "github", url: "https://github.com/michalgrzegorczyk-dev/"},
   ];
-
-  getSocialIconClass(name: string): string {
-    switch (name) {
-      case 'linkedin': return 'fab fa-linkedin';
-      case 'github': return 'fab fa-github';
-      case 'twitter': return 'fab fa-twitter';
-      default: return '';
-    }
-  }
 };
