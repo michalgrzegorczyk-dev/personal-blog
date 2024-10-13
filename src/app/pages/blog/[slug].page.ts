@@ -11,18 +11,11 @@ import PostAttributes from '../../post-attributes';
   template: `
     @if (post$ | async; as post) {
     <article>
-      <img class="post__image" [src]="post.attributes.coverImage" />
+<!--      <img class="post__image" [src]="post.attributes.coverImage" />-->
       <analog-markdown [content]="post.content" />
     </article>
     }
   `,
-  styles: [
-    `
-      .post__image {
-        max-height: 40vh;
-      }
-    `,
-  ],
 })
 export default class HomeComponent {
   readonly post$ = injectContent<PostAttributes>('slug');

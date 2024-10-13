@@ -63,7 +63,7 @@ class FooterComponent {
             <!-- Navigation Links for Desktop -->
             <div class="hidden lg:flex flex-row space-x-0 ml-auto text-gray-900 hover:text-primary-500">
               <a href="/blog" class="font-semibold text-sm underline pr-10" style="font-size: 1.14rem">blog</a>
-              <a href="/mind-space" class="font-semibold text-sm underline pr-10" style="font-size: 1.14rem">mentality</a>
+              <a href="/mind-space" class="font-semibold text-sm underline pr-10" style="font-size: 1.14rem">mindset</a>
               <a href="/resources" class="font-semibold text-sm underline" style="font-size: 1.14rem">resources</a>
             </div>
           </nav>
@@ -84,7 +84,7 @@ class FooterComponent {
             <nav class="mt-8 flex h-full basis-0 flex-col items-start overflow-y-auto pl-12 pt-2 text-left">
               <a href="/" class="text-xl mb-4 py-2 pr-4 font-bold tracking-widest text-gray-900">home</a>
               <a href="/blog" class="text-xl mb-4 py-2 pr-4 font-bold tracking-widest text-gray-900">blog</a>
-              <a href="/mind-space" class="text-xl mb-4 py-2 pr-4 font-bold tracking-widest text-gray-900">mentality</a>
+              <a href="/mind-space" class="text-xl mb-4 py-2 pr-4 font-bold tracking-widest text-gray-900">mindset</a>
               <a href="/resources" class="text-xl mb-4 py-2 pr-4 font-bold tracking-widest text-gray-900">resources</a>
             </nav>
             <button (click)="toggleMobileMenu()"

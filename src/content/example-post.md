@@ -1,17 +1,22 @@
 ---
 title: block websites that you know distract you ⛔
-slug: 2024-10-12-block-websites-that-you-know-distract-you
+slug: 2024-10-13-block-websites-that-you-know-distract-you
 description:
-coverImage: https://image4s.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80
+date: 2024-10-13
+coverImage: ''
 ---
 
 
 # block websites that you know distract you ⛔
 
-This productivity hack taught my brain that distracting websites are not available, so I don't even try to open them anymore. So whenever you try to visit these websites, you'll see "This site can't be reached", which is exactly what I need.
-<br/>
-<br/>
-By the way, web extensions don't work for me because they're too easy to remove. With this method, I have to go into the terminal, remind what was the command, edit some files, and save them, which takes more time and makes me rethink my decision before doing it.
+I would like to share with you a simple productivity trick that I use to block distracting websites and
+whenever I try to access them, I see the following view:
+![can't be reached](./post.png)
+
+FYI, chrome extensions don't work for me because they're too easy to remove with only 2 clicks. 
+That method forces me to go through a few more steps to unblock the 
+website like, open a terminal, remind what was the command, edit some files, and save them, which 
+takes more time and makes me rethink my decision before doing it 😉
 <br/>
 <br/>
 1. Open terminal and run following command:
@@ -19,6 +24,7 @@ By the way, web extensions don't work for me because they're too easy to remove.
 ```ts
 sudo nano /etc/hosts
 ```
+<br/>
 
 2. Add websites, which you would like to block, e.g.:
 
