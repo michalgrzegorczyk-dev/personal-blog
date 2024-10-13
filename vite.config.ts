@@ -17,7 +17,14 @@ export default defineConfig(({ mode }) => ({
         highlighter: 'prismjs',
       },
       prerender: {
-        routes: ['/blog'],
+        routes: async () => {
+          return [
+              '/api/rss.xml',
+        ];
+        },
+        sitemap: {
+          host: 'https://michalgrzegorczyk.dev',
+        },
       },
     }),
   ],
