@@ -2,21 +2,22 @@ import {Component, input, OnInit, signal, computed, Signal} from '@angular/core'
 import {injectContentFiles, ContentFile} from '@analogjs/content';
 import PostAttributes from '../../post-attributes';
 import { RouterLink } from '@angular/router';
+import {DatePipe, LowerCasePipe} from "@angular/common";
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, DatePipe, LowerCasePipe],
   template: `
-    <h2 class="mb-6">{{title() ?? 'blog posts'}}</h2>
+    <h2 class="mb-6">{{'blog posts'}}</h2>
 
-    @for (post of postsToDisplay(); track post.attributes.slug) {
+    @for (post of posts; track post.attributes.slug) {
       <a [routerLink]="['/blog/', post.attributes.slug]" class="block mb-6 p-7 shadow-lg rounded-lg border border-gray-400">
         <h3>{{ post.attributes.title }}</h3>
-        <p class="text-gray-500 mb-4" style="font-size: 1rem">last updated 27 days ago</p>
+        <p class="text-xs text-gray-600 mb-4">{{ post.attributes['date'] | date | lowercase }}</p>
         <p class="text-sm">{{ post.attributes.description }}</p>
 
-        <p class="font-semibold text-primary-500 mt-4 underline text-xs">read more</p>
+        <p class="font-semibold text-primary-500 mt-4 underline text-xs">view full article</p>
       </a>
     }
   `,
@@ -26,14 +27,6 @@ import { RouterLink } from '@angular/router';
     }
   `
 })
-export default class BlogComponent implements OnInit {
-  readonly limit = input<number>();
-  readonly title = input<string>();
+export default class BlogComponent {
   readonly posts = injectContentFiles<PostAttributes>();
-  postsToDisplay!: Signal<ContentFile<PostAttributes>[]>;
-
-  ngOnInit(): void {
-    this.postsToDisplay = computed(() => this.posts.slice(0, this.limit()));
-  }
 };
-// https://www.youtube.com/watch?v=8UumdecztKk

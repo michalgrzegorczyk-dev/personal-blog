@@ -60,12 +60,12 @@ module.exports = {
         fontWeight: '700',
         letterSpacing: theme('letterSpacing.tight'),
       },
-      'h1': {
-        fontSize: '1.85rem',
+      'h1': {// todo
+        fontSize: '1.7rem',
         color: theme('colors.gray.900'),
       },
       'h2': {
-        fontSize: '1.7rem',
+        fontSize: '1.8rem',
         color: theme('colors.gray.900'),
       },
       'h3': {
@@ -76,9 +76,6 @@ module.exports = {
       'p': {
         fontSize: theme('fontSize.lg'),
         color: theme('colors.gray.900'),
-      },
-      'code': {
-        color: theme('colors.indigo.500'),
       },
     });
   }),],

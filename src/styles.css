@@ -12,3 +12,27 @@ html {
 .no-scroll {
   overflow: hidden;
 }
+
+.analog-markdown {
+  h1 {
+    font-size: 1.55rem;
+    color: #111827;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.15rem;
+  }
+
+  ol, ul {
+    li {
+      color: #ff117a;
+      font-size: 1.15rem;
+      font-weight: 400;
+    }
+  }
+
+  pre {
+    border-radius: 0.5rem;
+  }
+}

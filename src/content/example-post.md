@@ -1,34 +1,35 @@
 ---
-title: This is an example blog post written in markdown!
-slug: 2022-12-27-test-post
-description: A messenge4r is a digital communication tool for real-time messaging, designed with front-end principles using HTML, CSS, and JavaScript. It includes features like media sharing, group chats, and encryption for secure and user-friendly communication.
-coverImage: https://image4s.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80
+title: block websites that you know distract you ⛔
+slug: 2024-10-13-block-websites-that-you-know-distract-you
+description:
+date: 2024-10-13
+coverImage: ''
 ---
 
-# Example Blog Post
 
-This is an example blog post written in markdown!
+# block websites that you know distract you ⛔
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I would like to share with you a simple productivity trick that I use to block distracting websites and
+whenever I try to access them, I see the following view:
+![can't be reached](./post.png)
 
-```ts:contentlayer.config.ts
-export const Blog = defineDocumentType(() => ({
-  name: 'Blog',
-  filePathPattern: 'blog/**/*.mdx',
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    date: { type: 'date', required: true },
-    tags: { type: 'list', of: { type: 'string' }, default: [] },
-    ...
-  },
-  computedFields: {
-    readingTime: { type: 'json', resolve: (doc) => readingTime(doc.body.raw) },
-    slug: {
-      type: 'string',
-      resolve: (doc) => doc._raw.flattenedPath.replace(/^.+?(\/)/, ''),
-    }
-    ...
-  },
-}))
+FYI, chrome extensions don't work for me because they're too easy to remove with only 2 clicks. 
+That method forces me to go through a few more steps to unblock the 
+website like, open a terminal, remind what was the command, edit some files, and save them, which 
+takes more time and makes me rethink my decision before doing it 😉
+<br/>
+<br/>
+1. Open terminal and run following command:
+
+```ts
+sudo nano /etc/hosts
+```
+<br/>
+
+2. Add websites, which you would like to block, e.g.:
+
+```ts 
+127.0.0.1 www.facebook.com
+127.0.0.1 www.x.com
+127.0.0.1 www.tiktok.com
 ```
