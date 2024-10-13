@@ -1,9 +1,9 @@
 import { Component, ChangeDetectionStrategy, signal, input } from '@angular/core';
 import { NgIf } from "@angular/common";
-import { mindSpaceList } from "./data";
+import { mindsetList } from "./data";
 
 @Component({
-  selector: 'app-mind-space',
+  selector: 'app-mindset',
   standalone: true,
   imports: [NgIf],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -45,11 +45,11 @@ import { mindSpaceList } from "./data";
     }
   `
 })
-export default class MindSpaceComponent {
+export default class MindsetComponent {
   readonly title = input('mind space');
 
   private currentIndex = signal(0);
-  private mindSpaces = signal(mindSpaceList());
+  private mindSpaces = signal(mindsetList());
 
   currentMindSpace = () => this.mindSpaces()[this.currentIndex()];
 

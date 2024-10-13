@@ -1,14 +1,15 @@
 import {Component, } from '@angular/core';
 import {RouterLink} from '@angular/router';
 import BlogComponent from "../blog/index.page";
-import MindSpaceComponent from "../mind-space/index.page";
+import MindsetComponent from "../mindset/index.page";
 import ResourcesComponent from "../resources/index.page";
 import {NgClass} from "@angular/common";
+import AuthorComponent from "../../components/author.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, BlogComponent, MindSpaceComponent, ResourcesComponent, NgClass],
+  imports: [RouterLink, BlogComponent, MindsetComponent, ResourcesComponent, NgClass, AuthorComponent],
   template: `
     <h2 class="mb-6 leading-10">{{ headerTitle }}</h2>
 
@@ -28,32 +29,7 @@ import {NgClass} from "@angular/common";
 
     </p>
 
-
-    <div class="items-center flex flex-col sm:flex-row sm:space-x-6">
-      <img
-        src="./profile.jpeg"
-        alt="Michal Grzegorczyk"
-        class="mt-4 w-32 h-auto rounded-full border border-gray-400 shadow-lg"
-      >
-      <div class="text-center sm:text-left flex-grow">
-        <h3 class="text-xl font-semibold">Michal Grzegorczyk</h3>
-        <p class="text-xs text-gray-600 mb-2">Software Engineer & Freelancer</p>
-        <div class="flex flex-wrap justify-center sm:justify-start gap-4 mt-3">
-          @for (social of socialMedia; track social.name) {
-            <a
-              class="font-semibold underline text-xs"
-              [href]="social.url"
-              target="_blank"
-              rel="noopener noreferrer"
-              [attr.aria-label]="social.name"
-            >
-              {{ social.name }}
-            </a>
-          }
-        </div>
-      </div>
-    </div>
-
+    <app-author></app-author>
 
     <div class="mb-14 mt-16 h-px bg-gray-400"></div>
 
@@ -63,10 +39,4 @@ import {NgClass} from "@angular/common";
 })
 export default class HomeComponent {
   headerTitle = "personal dev notes - handle them gently 😌";
-
-  socialMedia = [
-    {name: "linkedin", url: "https://www.linkedin.com/in/michalgrzegorczyk-dev"},
-    {name: "discord", url: "https://discord.gg/aF2rvQDQ"},
-    {name: "github", url: "https://github.com/michalgrzegorczyk-dev"},
-  ];
 };
