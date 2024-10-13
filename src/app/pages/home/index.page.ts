@@ -64,18 +64,9 @@ import {NgClass} from "@angular/common";
 export default class HomeComponent {
   headerTitle = "personal dev notes - handle them gently 😌";
 
-  aboutMeParagraphs = [
-    `Hi! I'm Michal, a Software Engineer with 6+ years of experience. I've mainly worked with Java and Angular/React, building web
-    apps from scratch, improving and expanding existing applications, while also maintaining large legacy systems.
-    Lately, I've been focusing more on front-end work, especially with Angular, while also keeping an interest in Node.js.`,
-
-    "In my free time, I freelance a lot, looking for side jobs, leading projects, adding features, collaborating with other developers, designers, and social media " +
-    "experts, while also exploring " +
-    "how products make money, which is pushing me towards product management. I mainly focus on delivery, but building team spirit and keeping things open and clear are very important to me as well.",
-  ];
   socialMedia = [
-    {name: "linkedin", url: "https://www.linkedin.com/in/michalgrzegorczyk-dev/"},
+    {name: "linkedin", url: "https://www.linkedin.com/in/michalgrzegorczyk-dev"},
     {name: "discord", url: "https://discord.gg/aF2rvQDQ"},
-    {name: "github", url: "https://github.com/michalgrzegorczyk-dev/"},
+    {name: "github", url: "https://github.com/michalgrzegorczyk-dev"},
   ];
 };
