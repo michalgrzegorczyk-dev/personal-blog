@@ -73,3 +73,4 @@ export default class BlogComponent {
     return new Date(b.attributes['date']).getTime() - new Date(a.attributes['date']).getTime();
   });
 };
+// https://www.youtube.com/watch?v=8UumdecztKk
