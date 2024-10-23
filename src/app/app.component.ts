@@ -64,7 +64,7 @@ class FooterComponent {
             <div class="hidden lg:flex flex-row space-x-0 ml-auto text-gray-900 hover:text-primary-500">
               <a href="/blog" class="font-semibold text-sm underline pr-10" style="font-size: 1.14rem">blog</a>
               <a href="/mindset" class="font-semibold text-sm underline pr-10" style="font-size: 1.14rem">mindset</a>
-              <a href="/resources" class="font-semibold text-sm underline" style="font-size: 1.14rem">resources</a>
+<!--              <a href="/resources" class="font-semibold text-sm underline" style="font-size: 1.14rem">resources</a>-->
             </div>
           </nav>
 
@@ -85,7 +85,7 @@ class FooterComponent {
               <a href="/" class="text-xl mb-4 py-2 pr-4 font-bold tracking-widest text-gray-900">home</a>
               <a href="/blog" class="text-xl mb-4 py-2 pr-4 font-bold tracking-widest text-gray-900">blog</a>
               <a href="/mindset" class="text-xl mb-4 py-2 pr-4 font-bold tracking-widest text-gray-900">mindset</a>
-              <a href="/resources" class="text-xl mb-4 py-2 pr-4 font-bold tracking-widest text-gray-900">resources</a>
+<!--              <a href="/resources" class="text-xl mb-4 py-2 pr-4 font-bold tracking-widest text-gray-900">resources</a>-->
             </nav>
             <button (click)="toggleMobileMenu()"
                     class="fixed right-4 top-7 z-80 h-16 w-16 p-4 text-gray-900 hover:text-primary-500"
