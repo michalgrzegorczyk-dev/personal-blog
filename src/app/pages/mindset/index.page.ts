@@ -8,7 +8,7 @@ import { mindsetList } from "./data";
   imports: [NgIf],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <h2 class="mb-6 text-left">{{ title() ?? 'mind space' }}</h2>
+    <h2 class="mb-6 text-left">{{ title() ?? 'mindset' }}</h2>
 
     <div class="relative w-full">
       <div class="px-14"> <!-- Adjusted padding for content -->
@@ -46,7 +46,7 @@ import { mindsetList } from "./data";
   `
 })
 export default class MindsetComponent {
-  readonly title = input('mind space');
+  readonly title = input('mindset');
 
   private currentIndex = signal(0);
   private mindSpaces = signal(mindsetList());
