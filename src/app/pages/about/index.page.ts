@@ -20,7 +20,7 @@ interface ResourceCategory {
   template: `
     <h2 class="mb-4">about</h2>
 
-    <div class="block mb-4 p-7 pb-8 shadow-lg rounded-lg border border-gray-400 bg-white">
+    <div class="block mb-6 p-7 pb-8 shadow-lg rounded-lg border border-gray-400 bg-white">
       <h3>16personalities (30.10.2024)</h3>
 
       <img src="./aboutme/16p.png" />
@@ -33,7 +33,7 @@ interface ResourceCategory {
       />
     </div>
 
-    <div class="block mb-4 p-7 pb-8 shadow-lg rounded-lg border border-gray-400 bg-white">
+    <div class="block mb-6 p-7 pb-8 shadow-lg rounded-lg border border-gray-400 bg-white">
       <h3>CliftonStrengths (30.10.2024)</h3>
 
 
