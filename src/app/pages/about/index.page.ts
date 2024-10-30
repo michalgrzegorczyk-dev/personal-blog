@@ -26,7 +26,7 @@ interface ResourceCategory {
       <img src="./aboutme/16p.png" />
 
       <embed
-        src="aboutme/aboutarchitect.pdf"
+        src="https://mgdev.s3.eu-north-1.amazonaws.com/aboutme/aboutarchitect.pdf"
         type="application/pdf"
         width="100%"
         height="600px"
