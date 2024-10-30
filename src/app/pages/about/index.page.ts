@@ -38,13 +38,13 @@ interface ResourceCategory {
 
 
       <embed
-        src="aboutme/top5.pdf"
+        src="https://mgdev.s3.eu-north-1.amazonaws.com/aboutme/aboutme/top5.pdf"
         type="application/pdf"
         width="100%"
         height="600px"
       />
       <embed
-        src="aboutme/top34.pdf"
+        src="https://mgdev.s3.eu-north-1.amazonaws.com/aboutme/aboutme/top34.pdf"
         type="application/pdf"
         width="100%"
         height="600px"
