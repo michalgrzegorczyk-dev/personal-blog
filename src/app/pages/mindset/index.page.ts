@@ -1,67 +1,49 @@
-import { Component, ChangeDetectionStrategy, signal, input } from '@angular/core';
-import { NgIf } from "@angular/common";
+import { Component, ChangeDetectionStrategy, input } from '@angular/core';
+import { NgIf, NgFor } from "@angular/common";
 import { mindsetList } from "./data";
 
 @Component({
   selector: 'app-mindset',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, NgFor],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <h2 class="mb-6 text-left">{{ title() ?? 'mindset' }}</h2>
+    <h2 class="mb-6 text-left">{{  'thoughts' }}</h2>
 
-    <div class="relative w-full">
-      <div class="px-14"> <!-- Adjusted padding for content -->
-        @if (currentMindSpace().type === 'text') {
-          <blockquote class="p-8 shadow-lg rounded-lg border border-gray-400">
-            <p class="text-gray-900 text-sm">"{{ currentMindSpace().content }}"</p>
+    <div class="flex flex-col gap-6">
+      @for (mindSpace of mindSpaces(); track mindSpace) {
+      @if (mindSpace.type === 'text') {
+      <blockquote class="p-6 shadow-lg rounded-lg border border-gray-400">
+        <p class="text-gray-900 text-sm">"{{ mindSpace.content }}"</p>
 
-            @if (currentMindSpace().author !== '') {
-              <span class="block mt-4 sm:mt-5 text-right text-sm text-pink-500 font-medium">
-              — {{ currentMindSpace().author }}
-              </span>
-            }
-          </blockquote>
+        @if (mindSpace.author !== '') {
+        <span class="block mt-4 text-right text text-pink-500 ">
+          — {{ mindSpace.author }}
+        </span>
+        } @else {
+        <span class="block mt-4 text-right text text-pink-500 ">
+          — Unknown/From the Internet
+        </span>
         }
-        @if (currentMindSpace().type === 'img') {
-          <div class="flex justify-center">
-            <img class="max-w-full h-auto max-h-[560px] rounded-lg" [src]="currentMindSpace().content" alt="Mind Space Image">
-          </div>
-        }
+      </blockquote>
+      }
+      @if (mindSpace.type === 'img') {
+      <div class="flex justify-center">
+        <img
+          [src]="mindSpace.content"
+          alt="Mind Space Image"
+          class="rounded-lg"
+          [style.width.px]="mindSpace.width"
+          [style.height.px]="mindSpace.height"
+          style="max-width: 600px;"
+        >
       </div>
-
-      <button (click)="prevItem()" class="absolute left-0 top-1/2 transform -translate-y-1/2 px-3 py-2 bg-primary-500 text-white rounded hover:bg-primary-600">
-        ←
-      </button>
-      <button (click)="nextItem()" class="absolute right-0 top-1/2 transform -translate-y-1/2 px-3 py-2 bg-primary-500 text-white rounded hover:bg-primary-600">
-        →
-      </button>
+      }
+      }
     </div>
-  `,
-  styles: `
-    :host {
-      display: block;
-      width: 100%;
-    }
   `
 })
 export default class MindsetComponent {
   readonly title = input('mindset');
-
-  private currentIndex = signal(0);
-  private mindSpaces = signal(mindsetList());
-
-  currentMindSpace = () => this.mindSpaces()[this.currentIndex()];
-
-  prevItem() {
-    this.currentIndex.update(index =>
-      (index - 1 + this.mindSpaces().length) % this.mindSpaces().length
-    );
-  }
-
-  nextItem() {
-    this.currentIndex.update(index =>
-      (index + 1) % this.mindSpaces().length
-    );
-  }
+  readonly mindSpaces = mindsetList;
 }

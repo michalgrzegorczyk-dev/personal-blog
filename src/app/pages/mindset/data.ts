@@ -31,6 +31,11 @@ export const mindsetList = signal<MindsetType[]>(shuffle([
     type: 'img'
   },
   {
+    content: "./mindset/opportunities.jpg",
+    author: "",
+    type: 'img'
+  },
+  {
     content: "Sometimes you have to lose yourself to find yourself.",
     type: 'text',
     author: "",

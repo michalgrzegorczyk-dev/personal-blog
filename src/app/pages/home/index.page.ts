@@ -2,7 +2,7 @@ import {Component, } from '@angular/core';
 import {RouterLink} from '@angular/router';
 import BlogComponent from "../blog/index.page";
 import MindsetComponent from "../mindset/index.page";
-import ResourcesComponent from "../resources/index.page";
+import ResourcesComponent from "../aboutme/index.page";
 import {NgClass} from "@angular/common";
 import AuthorComponent from "../../components/author.component";
 
