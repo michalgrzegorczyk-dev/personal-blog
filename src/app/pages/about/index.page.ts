@@ -31,6 +31,31 @@ interface ResourceCategory {
       />
     </div>
 
+
+
+
+    <div class="block mb-6 p-7 pb-8 shadow-lg rounded-lg border border-gray-400 bg-white">
+      <h3>ClickUp Novice Expert</h3>
+
+      <embed
+        src="https://mgdev.s3.eu-north-1.amazonaws.com/aboutme/cpexpert.pdf"
+        type="application/pdf"
+        width="100%"
+        height="600px"
+      />
+    </div>
+
+    <div class="block mb-6 p-7 pb-8 shadow-lg rounded-lg border border-gray-400 bg-white">
+      <h3>ClickUp Novice Certificate</h3>
+
+      <embed
+        src="https://mgdev.s3.eu-north-1.amazonaws.com/aboutme/cpnovice.pdf"
+        type="application/pdf"
+        width="100%"
+        height="600px"
+      />
+    </div>
+
     <div class="block mb-6 p-7 pb-8 shadow-lg rounded-lg border border-gray-400 bg-white">
       <h3>16personalities (30.10.2024)</h3>
 
