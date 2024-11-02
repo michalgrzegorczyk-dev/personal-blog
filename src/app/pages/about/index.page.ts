@@ -21,6 +21,19 @@ interface ResourceCategory {
     <h2 class="mb-4">about</h2>
 
     <div class="block mb-6 p-7 pb-8 shadow-lg rounded-lg border border-gray-400 bg-white">
+      <h3>NgRx Workshops Certificate (10/2024)</h3>
+
+      <img src="./aboutme/16p.png" />
+
+      <embed
+        src="https://mgdev.s3.eu-north-1.amazonaws.com/aboutme/Michal-Grzegorczyk.pdf"
+        type="application/pdf"
+        width="100%"
+        height="600px"
+      />
+    </div>
+
+    <div class="block mb-6 p-7 pb-8 shadow-lg rounded-lg border border-gray-400 bg-white">
       <h3>16personalities (30.10.2024)</h3>
 
       <img src="./aboutme/16p.png" />
