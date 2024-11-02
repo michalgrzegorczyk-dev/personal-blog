@@ -23,8 +23,6 @@ interface ResourceCategory {
     <div class="block mb-6 p-7 pb-8 shadow-lg rounded-lg border border-gray-400 bg-white">
       <h3>NgRx Workshops Certificate (10/2024)</h3>
 
-      <img src="./aboutme/16p.png" />
-
       <embed
         src="https://mgdev.s3.eu-north-1.amazonaws.com/aboutme/Michal-Grzegorczyk.pdf"
         type="application/pdf"
