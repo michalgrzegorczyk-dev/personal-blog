@@ -32,7 +32,7 @@ interface ResourceCategory {
     </div>
 
     <div class="block mb-6 p-7 pb-8 shadow-lg rounded-lg border border-gray-400 bg-white">
-      <h3>Ng Poland COnf 2024)</h3>
+      <h3>Ng Poland Conf 2024</h3>
 
       <embed
         src="https://mgdev.s3.eu-north-1.amazonaws.com/aboutme/Certificate_of_Attendance.pdf"
